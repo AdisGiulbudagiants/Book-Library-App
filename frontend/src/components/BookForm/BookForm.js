@@ -30,7 +30,7 @@ const BookForm = () => {
   }
 
   function handleAddRandomBookViaAPI() {
-    dispatch(fetchBook())
+    dispatch(fetchBook("http://localhost:4000/random-book")) //Порт должен быть 4000 чтобы работало
   }
 
   return (
